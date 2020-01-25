@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/{any?}', fn() => view('index'))->where('any', '.+');
+Route::get('/', function () {
+    return view('welcome');
+});
